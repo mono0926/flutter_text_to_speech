@@ -81,10 +81,10 @@ class FlutterTextToSpeech implements TTSAgent, TextToSpeech.OnInitListener {
     @Override
     public void stop(Context context, MethodChannel.Result result) {
         ttsAgent.stop();
-        ttsAgent.shutdown();
-        ttsAgent = null;
-        initResult = null;
-        bundle.clear();
+//        ttsAgent.shutdown();
+//        ttsAgent = null;
+//        initResult = null;
+//        bundle.clear();
         result.success(true);
     }
 

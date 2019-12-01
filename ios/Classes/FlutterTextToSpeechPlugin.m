@@ -91,8 +91,8 @@ NSMutableArray<NSString *> *ttsLanguageSet;
 
 + (void)stop:(FlutterResult)result{
     [synth stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
-    NSError *error;
-    [[AVAudioSession sharedInstance] setActive:NO withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
+    // NSError *error;
+    // [[AVAudioSession sharedInstance] setActive:NO withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
     result(@(YES));
 }
 
